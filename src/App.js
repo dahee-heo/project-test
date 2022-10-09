@@ -2,12 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-import homePage from './page/homePage';
+import HomePage from './page/HomePage';
 import BottomBar from './component/BottomBar';
+import MapView from './component/MapView';
 
 const MaxWidth = styled.div`
   max-width: 640px;
-  background-color: black;
 `
 const Button = styled.button`
   width: 200px;
@@ -21,11 +21,11 @@ function App() {
       <MaxWidth>
 
         <BrowserRouter>
+          <MapView></MapView>
           <Routes>
-            <Route path='/' element={<homePage></homePage>}></Route>
+            <Route path='/' element={<HomePage></HomePage>}></Route>
           </Routes>
         </BrowserRouter>
-        <h1>Test</h1>
         <Button>button</Button>
       </MaxWidth >
       <BottomBar></BottomBar>
