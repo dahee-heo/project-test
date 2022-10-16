@@ -21,7 +21,6 @@ function App() {
       <MaxWidth>
 
         <BrowserRouter>
-          <MapView></MapView>
           <Routes>
             <Route path='/' element={<HomePage></HomePage>}></Route>
           </Routes>
